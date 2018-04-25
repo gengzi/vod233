@@ -27,7 +27,7 @@ def selectNoDownloadVod():
     查询没有下载的视频
     :return:
     """
-    sql = "select vodtitle,vodgifurl,vodfolder,vodurl,id from vod233 where isdownload is null and vodurl != '-' and vodfolder = '手机小视频' limit 1,85"
+    sql = "select vodtitle,vodgifurl,vodfolder,vodurl,id from vod233 where isdownload is null and vodurl != '-' limit 2880,88"
     params = []
     list = mysql.get_all(sql=sql,params=params)
     if len(list) >0 :
@@ -86,5 +86,5 @@ def loadPage(item):
 
 
 if __name__ == "__main__":
-    for i in range(0,1):
+    for i in range(0,10):
         selectNoDownloadVod()

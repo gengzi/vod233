@@ -17,7 +17,7 @@ from DateUtils import getNewFormatTime
 
 headers = {"User-Agent": 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:23.0) Gecko/20100101 Firefox/23.0'}
 
-filepath = "H:\\ziyuan\\vod233\\"
+filepath = "J:\\ziyuan\\vod233\\"
 
 # 初始化mysql
 mysql = MysqlHelper(host="123.206.30.117",user="root",passwd="111",db="1024",port=3306)
